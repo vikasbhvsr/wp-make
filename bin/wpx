@@ -1,0 +1,17 @@
+#!/usr/bin/env php
+<?php
+
+require __DIR__ . '/../vendor/autoload.php';
+
+use WPMake\commands\MakePageTemplateCommand;
+use WPMake\commands\MakeCPTCommand;
+
+$command = $argv[1] ?? null;
+
+match ($command) {
+    '--version' => die("WP Make CLI version 1.0.0\n"),
+    '-V' => die("WP Make CLI version 1.0.0\n"),
+    'make:template' => MakePageTemplateCommand::handle(),
+    'make:cpt' => MakeCPTCommand::handle(),
+    default => die("Command not found: $command\n"),
+};

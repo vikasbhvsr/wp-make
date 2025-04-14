@@ -1,0 +1,13 @@
+<?php
+
+/**
+ *  Template Name: {{ name }}
+ * */ 
+
+ {{ get_header }}
+?>
+
+<div class="template-{{ slug }}"></div>
+
+<?php
+ {{ get_footer }}

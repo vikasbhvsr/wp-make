@@ -1,0 +1,21 @@
+{
+    "name": "vikas/wp-make",
+    "type": "library",
+    "version": "1.0.0",
+    "require": {
+        "php": "^8.0",
+        "laravel/prompts": "^0.3.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "WPMake\\": "src/"
+        }
+    },
+    "scripts": {},
+    "authors": [
+        {
+            "name": "Vikas Bhavsar",
+            "email": "vikasbhvsr@gmail.com"
+        }
+    ]
+}
